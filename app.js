@@ -37,7 +37,7 @@ function getChoiceString(choice){
         case 3:
             return 'scissors';
     }
-    console.log(`Something went wrong: choice ${choice} was invalid.`);
+    alert(`Something went wrong: choice ${choice} was invalid.`);
     return 'null';
 }
 function playRound(playerChoice, computerChoice){
@@ -77,18 +77,18 @@ function game(){
         if (playRound(playerChoice, computerChoice) === 0){
             playerScore++;
             cpuScore++;
-            console.log(`It's a tie! ${cpuString} and ${playerString} are the same!`);
+            alert(`It's a tie! ${cpuString} and ${playerString} are the same!`);
         }
         else if (playRound(playerChoice, computerChoice) === 1){
             playerScore++;
-            console.log(`You win! ${playerString} beats ${cpuString}.`)
+            alert(`You win! ${playerString} beats ${cpuString}.`)
         }
         else if (playRound(playerChoice, computerChoice) === -1){
             cpuScore++;
-            console.log(`You lose! ${cpuString} beats ${playerString}.`)
+            alert(`You lose! ${cpuString} beats ${playerString}.`)
         }
         else {
-            console.log(`Error: invalid round result.`);
+            alert(`Error: invalid round result.`);
             break;
         }
     }
@@ -96,13 +96,13 @@ function game(){
 }
 function findWinner(playerScore, cpuScore){
     if (playerScore > cpuScore){
-        console.log(`You win! Your score was ${playerScore} and your opponent's was ${cpuScore}.`)
+        alert(`You win! Your score was ${playerScore} and your opponent's was ${cpuScore}.`)
     }
     else if (playerScore < cpuScore){
-        console.log(`You lose! Your score was ${playerScore} and your opponent's was ${cpuScore}.`)
+        alert(`You lose! Your score was ${playerScore} and your opponent's was ${cpuScore}.`)
     }
     else{
-        console.log(`You tied! Your score was ${playerScore} and your opponent's was ${cpuScore}.`)
+        alert(`You tied! Your score was ${playerScore} and your opponent's was ${cpuScore}.`)
     }
 }
 game();
