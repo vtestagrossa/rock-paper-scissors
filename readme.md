@@ -1,0 +1,1 @@
+Just a simple browser-based Rock, Paper, Scissors game against a computer opponent. Follow the alerts and play all 5 rounds.
