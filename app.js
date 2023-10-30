@@ -1,4 +1,3 @@
-//TODO: Check each player for 5 wins and announce winner in results tab.
 const content = document.getElementById('main');
 const results = document.getElementById('results');
 
