@@ -1,1 +1,1 @@
-Just a simple browser-based Rock, Paper, Scissors game against a computer opponent. Follow the alerts and play all 5 rounds. You can see it in action at vtestagrossa.github.io/rock-paper-scissors/
+Just a simple browser-based Rock, Paper, Scissors game against a computer opponent. Click the corresponding buttons and try to beat the computer to 5 wins. You can see it in action at vtestagrossa.github.io/rock-paper-scissors/
