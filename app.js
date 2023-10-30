@@ -9,6 +9,7 @@ const winLoss = document.createElement('p');
 const rockBtn = document.createElement('button');
 const paperBtn = document.createElement('button');
 const scissorsBtn = document.createElement('button');
+const replayBtn = document.createElement('button');
 
 let cpuWins = 0;
 let playerWins = 0;
@@ -24,10 +25,12 @@ paperBtn.textContent = 'Paper';
 paperBtn.value = '2';
 scissorsBtn.textContent = 'Scissors';
 scissorsBtn.value = '3';
+replayBtn.textContent = 'Play again?';
 
 rockBtn.addEventListener('click', (event) => {playRound(event.target.value, getComputerChoice())});
 paperBtn.addEventListener('click', (event) => {playRound(event.target.value, getComputerChoice())});
 scissorsBtn.addEventListener('click', (event) => {playRound(event.target.value, getComputerChoice())});
+replayBtn.addEventListener('click', () => {replayGame()});
 
 content.appendChild(rockBtn);
 content.appendChild(paperBtn);
@@ -98,5 +101,35 @@ function playRound(p1Choice, computerChoice){
     resultsTxt.textContent = `CPU: ${cpuWins} Player: ${playerWins}`;
     choiceTxt.textContent = `CPU chose: ${cpuChoice}. You chose ${playerChoice}.`;
     winLoss.textContent = `${winTxt}`;
+    tallyWins();
+}
+function tallyWins(){
+    if (playerWins >= 5){
+        winLoss.textContent += ' You won the game!';
+        gameOver();
+    }
+    else if (cpuWins >= 5){
+        winLoss.textContent += ' Your opponent won the game!';
+        gameOver();
+    }
+}
+function gameOver(){
+    rockBtn.disabled = true;
+    paperBtn.disabled = true;
+    scissorsBtn.disabled = true;
+    results.appendChild(replayBtn);
+}
+function replayGame(){
+    playerWins = 0;
+    cpuWins = 0;
+    rockBtn.disabled = false;
+    paperBtn.disabled = false;
+    scissorsBtn.disabled = false;
+    results.removeChild(replayBtn);
 
+    resultsTxt.textContent = `CPU: ${cpuWins} Player: ${playerWins}`;
+    choiceTxt.textContent = ``;
+    cpuChoice = '';
+    playerChoice = '';
+    winLoss.textContent = '';
 }
