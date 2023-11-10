@@ -10,6 +10,11 @@ const paperBtn = document.createElement('button');
 const scissorsBtn = document.createElement('button');
 const replayBtn = document.createElement('button');
 
+rockBtn.classList.add('btn');
+paperBtn.classList.add('btn');
+scissorsBtn.classList.add('btn');
+replayBtn.classList.add('btn');
+
 let cpuWins = 0;
 let playerWins = 0;
 let cpuChoice = '';

@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.btn{
+    background-color: darkgray;
+    color: black;
+    font-size: large;
+    border-radius: 7px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: slategrey;
+    padding: 25px;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #AAAAAA;
+}
+#main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+}
+#results{
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    font-size: large;
+    min-width: 350px;
+    height: 250px;
+    background-color: lightslategray;
+    border-style: inset;
+    border-color: lightgray;
+}
