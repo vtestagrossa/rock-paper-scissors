@@ -5,10 +5,11 @@ body{
     background-color: black;
 }
 .btn{
-    background-color: darkgray;
+    background-color: rgb(93, 135, 180);
     color: black;
     font-size: large;
-    border-radius: 7px;
+    padding: .25rem;
+    border-radius: .75rem;
 }
 .container{
     display: flex;
@@ -16,16 +17,17 @@ body{
     align-items: center;
     justify-content: center;
     background-color: slategrey;
-    padding: 25px;
+    padding: 1rem;
     border-style: outset;
-    border-width: 5px;
-    border-radius: 20px;
+    border-width: .5rem;
+    border-radius: 1rem;
     border-color: #AAAAAA;
 }
 #main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem;
     width: 75%;
 }
 #results{
@@ -35,9 +37,9 @@ body{
     align-items: center;
     color: rgb(245, 245, 245);
     font-size: large;
-    min-width: 350px;
-    height: 250px;
-    background-color: lightslategray;
+    min-width: 25rem;
+    height: 22rem;
+    background-color: rgb(85, 99, 114);
     border-style: inset;
     border-color: lightgray;
 }
