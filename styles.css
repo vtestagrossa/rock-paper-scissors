@@ -8,8 +8,8 @@ body{
     background-color: rgb(93, 135, 180);
     color: black;
     font-size: large;
-    padding: .25rem;
-    border-radius: .75rem;
+    padding: .25em;
+    border-radius: .75em;
 }
 .container{
     display: flex;
@@ -17,17 +17,18 @@ body{
     align-items: center;
     justify-content: center;
     background-color: slategrey;
-    padding: 1rem;
+    margin: 0.5em;
+    padding: 1em;
     border-style: outset;
-    border-width: .5rem;
-    border-radius: 1rem;
+    border-width: .5em;
+    border-radius: 1em;
     border-color: #AAAAAA;
 }
 #main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    padding: 1em;
     width: 75%;
 }
 #results{
@@ -37,8 +38,8 @@ body{
     align-items: center;
     color: rgb(245, 245, 245);
     font-size: large;
-    min-width: 25rem;
-    height: 22rem;
+    min-width: 25em;
+    height: 22em;
     background-color: rgb(85, 99, 114);
     border-style: inset;
     border-color: lightgray;
